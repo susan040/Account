@@ -23,6 +23,8 @@ class Example extends StatelessWidget {
                 SizedBox(height: 30),
               ],
             ),
+
+            
             const Text("01:57", style: TextStyle(color: Colors.red,fontSize:15, fontWeight: FontWeight.bold)),
             Padding(
               padding: const EdgeInsets.only(right: 50, left: 50, top: 40, bottom: 20),
@@ -30,11 +32,17 @@ class Example extends StatelessWidget {
                 appContext: context, 
                 length: 4,
                 pinTheme: PinTheme(
+
+
+
                   shape: PinCodeFieldShape.box,
                   borderRadius: BorderRadius.circular(8),
                   fieldHeight: 50,
                   fieldWidth: 50,
-                  activeFillColor: Colors.white,
+
+
+
+                  activeFillColor: Colors.amber,
                 ),
                 validator: (value){
                           if (value!.isEmpty){
